@@ -32,7 +32,7 @@ class AvatarServiceTest {
     @BeforeEach
     void setUp() throws Exception {
         var path = Files.createTempDirectory("avatar_test");
-        service = new AvatarService(avatarRepository, studentRepository, path.toString());
+        service = new AvatarService(avatarRepository, studentRepository, path.toString(), true);
     }
 
     @Test
