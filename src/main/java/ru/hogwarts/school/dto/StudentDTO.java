@@ -14,6 +14,9 @@ public class StudentDTO {
         this.facultyId = facultyId;
     }
 
+    public StudentDTO() {
+    }
+
     public Long getId() {
         return id;
     }
@@ -28,5 +31,21 @@ public class StudentDTO {
 
     public long getFacultyId() {
         return facultyId;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setFacultyId(long facultyId) {
+        this.facultyId = facultyId;
     }
 }

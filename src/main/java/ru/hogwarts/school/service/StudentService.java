@@ -19,7 +19,7 @@ public class StudentService {
         this.facultyRepository = facultyRepository;
     }
 
-    public StudentDTO add(StudentDTO studentDTO) {
+    public StudentDTO add(StudentDTO studentDTO) { // mapstruct
         Student s = new Student();
         s.setName(studentDTO.getName());
         s.setAge(studentDTO.getAge());
